@@ -25,7 +25,7 @@ app.register(mercurius, {
 })
 
 app.get('/', async function (req, reply) {
-    const query = '{ add(x: 2, y: 2) }'
+    const query = '{ add(x: 5, y: 5) }'
     return reply.status(200).graphql(query)
 })
 // Run the server!
